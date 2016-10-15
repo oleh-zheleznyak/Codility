@@ -17,16 +17,14 @@ namespace Codility.Tasks.Lesson2.Arrays
             if (A.Length % 2 == 0) throw new ArgumentException("Array A should be non empty and with odd number of elements");
             if (A.Length == 1) return A.First();
 
-            // cheat - this makes the time complexity O(NlgN) instead of O(N), but keeps space complexity at O(1)
-            // however, if we use counting sort, we will have O(N) time complexity, but also O(N) space complexiy
-            Array.Sort(A);
+            var element = A.First();
 
-            for (int i = 0; i < A.Length - 2; i += 2)
+            for (int i = 1; i < A.Length; i++)
             {
-                if (A[i] != A[i + 1]) return A[i];
+                element ^= A[i];
             }
 
-            return A.Last();
+            return element;
         }
     }
 }
