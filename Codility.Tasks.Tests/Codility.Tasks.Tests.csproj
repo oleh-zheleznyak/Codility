@@ -62,6 +62,12 @@
       <Name>Codility.Tasks</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lesson3.TimeComplexity\TapeEquilibriumTest.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Chutzpah.json" />
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

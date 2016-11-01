@@ -1,0 +1,7 @@
+﻿{
+  "References": [
+    {
+      "Path": "../Codility.Tasks/Lesson3.TimeComplexity/TapeEquilibrium.js"
+    }
+  ]
+}

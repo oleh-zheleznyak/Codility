@@ -43,11 +43,16 @@
     <Compile Include="Lesson1.Iterations\BinaryGap.cs" />
     <Compile Include="Lesson2.Arrays\CyclicRotation.cs" />
     <Compile Include="Lesson2.Arrays\OddOccurrencesInArray.cs" />
+    <Compile Include="Lesson3.TimeComplexity\FrogJmp.cs" />
     <Compile Include="Lesson3.TimeComplexity\TapeEquilibrium.cs" />
     <Compile Include="Lesson92\SocksLaundering.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Lesson3.TimeComplexity\TapeEquilibrium.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
