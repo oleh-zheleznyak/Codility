@@ -54,6 +54,7 @@
     <Compile Include="Lesson2.Arrays\OddOccurrencesInArrayTests.cs" />
     <Compile Include="Lesson3.TimeComplexity\PermMissingElemTests.cs" />
     <Compile Include="Lesson3.TimeComplexity\TapeEquilibriumTests.cs" />
+    <Compile Include="Lesson4.CountingElements\MissingElementTests.cs" />
     <Compile Include="Lesson92\SocksLaunderingTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

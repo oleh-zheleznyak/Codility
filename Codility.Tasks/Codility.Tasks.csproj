@@ -46,6 +46,7 @@
     <Compile Include="Lesson3.TimeComplexity\FrogJmp.cs" />
     <Compile Include="Lesson3.TimeComplexity\PermMissingElem.cs" />
     <Compile Include="Lesson3.TimeComplexity\TapeEquilibrium.cs" />
+    <Compile Include="Lesson4.CountingElements\MissingElement.cs" />
     <Compile Include="Lesson92\SocksLaundering.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
