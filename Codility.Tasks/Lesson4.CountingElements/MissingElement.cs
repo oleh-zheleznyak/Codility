@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 
 namespace Codility.Tasks.Lesson4.CountingElements
 {
@@ -12,42 +12,19 @@ namespace Codility.Tasks.Lesson4.CountingElements
 			var spread = GetSpread(A);
 			if (spread.Min > 1) return 1;
 
-			if (spread.Max > byte.MaxValue)
-				return FindSolutionUsingHashSet(A, spread);
-			else
-				return FindSolutionUsingArray(A, spread);
-		}
+			var bitArray = FillBitArray(A, spread);
 
-		private static int FindSolutionUsingHashSet(int[] A, Spread spread)
-		{
-			var hash = new HashSet<int>();
-			for (int i = 0; i < A.Length; i++)
+			for (int i = 0; i < bitArray.Length; i++)
 			{
-				if (!hash.Contains(A[i])) hash.Add(A[i]);
-			}
-			for (int i = 1; i <= spread.Max; i++)
-			{
-				if (!hash.Contains(i)) return i;
-			}
-			return spread.Max + 1;
-		}
-
-
-		private static int FindSolutionUsingArray(int[] A, Spread spread)
-		{
-			var flagArray = FillFlagArray(A, spread);
-
-			for (int i = 0; i < flagArray.Length; i++)
-			{
-				if (!flagArray[i]) return i + spread.Min;
+				if (!bitArray[i]) return i + spread.Min;
 			}
 
 			return spread.Max + 1;
 		}
 
-		private static bool[] FillFlagArray(int[] A, Spread spread)
+		private static BitArray FillBitArray(int[] A, Spread spread)
 		{
-			var flagArray = new bool[spread.Range()];
+			var flagArray = new BitArray(spread.Range());
 
 			for (int i = 0; i < A.Length; i++)
 			{
