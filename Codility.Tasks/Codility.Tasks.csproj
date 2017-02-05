@@ -40,12 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Spread.cs" />
     <Compile Include="Lesson1.Iterations\BinaryGap.cs" />
     <Compile Include="Lesson2.Arrays\CyclicRotation.cs" />
     <Compile Include="Lesson2.Arrays\OddOccurrencesInArray.cs" />
     <Compile Include="Lesson3.TimeComplexity\FrogJmp.cs" />
     <Compile Include="Lesson3.TimeComplexity\PermMissingElem.cs" />
     <Compile Include="Lesson3.TimeComplexity\TapeEquilibrium.cs" />
+    <Compile Include="Lesson4.CountingElements\FrogRiverOne.cs" />
     <Compile Include="Lesson4.CountingElements\MissingElement.cs" />
     <Compile Include="Lesson92\SocksLaundering.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

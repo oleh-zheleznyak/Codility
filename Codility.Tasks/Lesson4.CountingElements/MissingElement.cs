@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using Codility.Tasks.Common;
 
 namespace Codility.Tasks.Lesson4.CountingElements
 {
@@ -44,23 +45,6 @@ namespace Codility.Tasks.Lesson4.CountingElements
 			}
 
 			return new Spread(max, min);
-		}
-
-		private struct Spread
-		{
-			public Spread(int max, int min)
-			{
-				Max = max;
-				Min = min;
-			}
-
-			public int Max { get; }
-
-			public int Min { get; }
-
-			public int Range() => Max - Min + 1;
-
-			public override string ToString() => $"[{Min};{Max}]";
 		}
 	}
 }
