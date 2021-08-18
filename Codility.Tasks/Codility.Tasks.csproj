@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Common\Spread.cs" />
     <Compile Include="Lesson1.Iterations\BinaryGap.cs" />
+    <Compile Include="Lesson1.Iterations\BinaryGap_Caterpillar.cs" />
     <Compile Include="Lesson2.Arrays\CyclicRotation.cs" />
     <Compile Include="Lesson2.Arrays\OddOccurrencesInArray.cs" />
     <Compile Include="Lesson3.TimeComplexity\FrogJmp.cs" />
